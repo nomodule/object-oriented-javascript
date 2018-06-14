@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%:;
+}
+
+body {
+  font-family: 'Operator Mono', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background: #0ca1d2;
+  color: rgba(255, 255, 255, .99);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border-radius: .2rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+  outline: none;
+  transition: all .15s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 0 transparent;
+}
+
+button:active {
+  background: #0079a0;
+  transform: translateY(1px);
+}
+
+input[type=text] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-family: inherit;
+}
+
+input[type=radio] {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.wrapper {
+  margin: 50px auto;
+  padding: 15px;
+}
+
+.wrapper.--small {
+  max-width: 550px;
+  margin: 50px auto;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-header > * {
+  flex:  1;
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+.form-group.inline {
+  display: flex;
+}
+
+.form-group.inline > *:not(:last-child) {
+  margin-right:  15px;
+}
+
+.d-block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cards__all {
+  display: flex;
+}
+
+.cards__all > * {
+  flex: 1;
+}
+
+.cards__all > *:not(:last-child) {
+  margin-right:  15px;
+}
+
+.card {
+  padding: 15px;
+  border:  1px solid #a9a9a9;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Object Oriented Javascript</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  
+  <div class="wrapper --small">
+    <div class="app-header">
+      <h1>Add <span>Teacher</span></h1>
+      <button id="toggler">Toggle</button>
+    </div>
+    <div class="form-group inline">
+      <input type="text" id="name" placeholder="Firstname">
+      <input type="text" id="name" placeholder="Surname">
+    </div>
+    <div class="form-group inline">
+      <div>
+        <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+      </div>
+      <div>
+        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+      </div>
+    </div>
+    <div class="form-group inline">
+      <input type="text" id="dob_day" placeholder="Day">
+      <input type="text" id="dob_month" placeholder="Month">
+      <input type="text" id="dob_year" placeholder="Year">
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="Which subject do you teach?" id="subject">
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="Which are your interests? Comma seperate every interest." id="subject">
+    </div>
+
+    <button id="add"  style="margin-top: 15px;">Add Teacher</button>
+  </div>
+
+  <div class="wrapper">
+    <div class="cards__all">
+      <div class="teachers__card">
+        <h1 class="text-center">Teachers</h1>
+        <div class="cards__container">
+          <div class="card">
+            <h2 class="card__name">John Doe</h2>
+            <p>Male</p>
+            <p><span>32</span> years old</p>
+            <p>Economics</p>
+            <p>Politics, soprts and traveling</p>
+        </div>
+        </div>
+      </div>
+      <div class="students__card">
+        <h1 class="text-center">Students</h1>
+        <div class="cards__container">
+          <div class="card">
+            <h2 class="card__name">Jane Hulbert</h2>
+            <p>Female</p>
+            <p><span>23</span> years old</p>
+            <p>Economics</p>
+            <p>Politics, soprts and traveling</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
