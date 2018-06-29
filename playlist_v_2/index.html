@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Sandbox</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <style>
+        .remove, .remove:visited, .remove:active { color: red; }
+        .remove:hover { text-shadow: 0 0 10px rgb(253, 4, 4, .5) }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h4>Add Song in playlist</h4>
+        <form id="songForm">
+            <div class="form-group">
+                <input type="text" class="form-control" id="songTitle" placeholder="Song Title">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="songArtist" placeholder="Song Artist">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="songDuration" placeholder="Song Duration">
+            </div>
+            <input type="submit" class="btn btn-primary btn-block" id="addSongBtn" value="Add">
+        </form>
+        <br><br>
+        <h5>Awesome Playlist!</h5>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Duration</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="playlist"></tbody>
+        </table>
+    </div>
+
+    <script src="song.js"></script>
+    <script src="playlist.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
